@@ -6,6 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Loli Patitas Cortas</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(153, 81, 91));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            /* para que se vea el cursor posicionado*/
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+            /*Cambia el color del li cuando se asienta el cursor*/
+        }
+
+        .active {
+            background-color: #92a4ff;
+            /*Cambia el fondo del li cuando està aciva esa hoja*/
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #8b1886;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
 
 </head>
 
@@ -16,16 +108,122 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Preferencias.html">Preferencias</a></li>
-                <li><a href="Audiovisuales.html">Audiovisuales</a></li>
+                <li class="active"><a href="Audiovisuales.html">Audiovisuales</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
 
 
         </nav>
 
-        
+
     </header>
-    
+    <h2>Aqui jugando con sus peluches</h2>
+    <div class="centrado">
+        <video width="320" src="/assets/img/video1.mp4" autoplay muted></video>
+    </div>
+
+    <div class="centrado">
+        <audio src="/assets/img/audio.mp3" autoplay></audio>
+    </div>
+    <h2>Alguas fotitos</h2>
+    <section class="centrado">
+        <div class="gallery">
+            <a href="/assets/img/loli1.jpg" target="_blank"><img src="/assets/img/loli1.jpg" alt="Loli Imagen 1"
+                    width="600"></a>
+            <div class="desc">Loli 1</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/lola2.jpg" target="_blank"><img src="/assets/img/lola2.jpg" alt="Glottis Imagen 2"
+                    width="600"></a>
+            <div class="desc">Loli 2</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/lola4.jpg" target="_blank"><img src="/assets/img/lola4.jpg" alt="Glottis Imagen 3"
+                width="600"></a>
+                <div class="desc">Loli 3</div>
+            </div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/lola5.jpg" target="_blank"><img src="/assets/img/lola5.jpg" alt="Glottis Imagen 3"
+                    width="600"></a>
+            <div class="desc">Loli 5</div>
+        </div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/lola6.jpg" target="_blank"><img src="/assets/img/lola6.jpg" alt="Glottis Imagen 3"
+                    width="600"></a>
+            <div class="desc">Loli 6</div>
+        </div>
+    </section>
+    <h2>Amigos con los que comparte</h2>
+<hr>
+    <section class="centrado">
+        <div class="gallery">
+            <a href="/assets/img/amigos1.jpg" target="_blank"><img src="/assets/img/amigos1.jpg" alt="Loli Imagen 1"
+                    width="600"></a>
+            <div class="desc">amigo 1</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/amigos2.jpeg" target="_blank"><img src="/assets/img/amigos2.jpeg" alt="Glottis Imagen 2"
+                    width="600"></a>
+            <div class="desc">amigo 2</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/amigos3.jpg" target="_blank"><img src="/assets/img/amigos3.jpg" alt="Glottis Imagen 3"
+                width="600"></a>
+                <div class="desc">amigo 3</div>
+            </div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/amigos4.jpg" target="_blank"><img src="/assets/img/amigos4.jpg" alt="Glottis Imagen 3"
+                    width="600"></a>
+            <div class="desc">amigo 5</div>
+        </div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/amigos11.jpeg" target="_blank"><img src="/assets/img/amigos11.jpeg" alt="Glottis Imagen 3"
+                    width="600"></a>
+            <div class="desc">amigo 6</div>
+        </div>
+    </section>
+    <h2>La familia</h2>
+<hr>
+    <section class="centrado">
+        <div class="gallery">
+            <a href="/assets/img/Kratos.jpg" target="_blank"><img src="/assets/img/Kratos.jpg" alt="Loli Imagen 1"
+                    width="600"></a>
+            <div class="desc">Hermano Kratos</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/Mollo.jpg" target="_blank"><img src="/assets/img/Mollo.jpg" alt="Glottis Imagen 2"
+                    width="600"></a>
+            <div class="desc">Tio Mollo</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/primos1.jpeg" target="_blank"><img src="/assets/img/primos1.jpeg" alt="Glottis Imagen 3"
+                width="600"></a>
+                <div class="desc">Primo</div>
+            </div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/primos2.jpeg" target="_blank"><img src="/assets/img/primos2.jpeg" alt="Glottis Imagen 3"
+                    width="600"></a>
+            <div class="desc">Primo</div>
+        </div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/primos3.jpeg" target="_blank"><img src="/assets/img/primos3.jpeg" alt="Glottis Imagen 3"
+                    width="600"></a>
+            <div class="desc">Primo</div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+
 
 </body>
 
