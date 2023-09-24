@@ -6,6 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Loli Patitas Cortas</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(153, 81, 91));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            /* para que se vea el cursor posicionado*/
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+            /*Cambia el color del li cuando se asienta el cursor*/
+        }
+
+        .active {
+            background-color: #92a4ff;
+            /*Cambia el fondo del li cuando està aciva esa hoja*/
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #8b1886;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .image2 {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 25%;
+            height: auto;
+        }
+
+        .article {
+            float: left;
+            width: 70%;
+            background-color: #FFF;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #CCC;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+            background-color: rgb(162, 162, 162);
+        }
+
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+            text-align: center;
+            left: 0;
+            right: 0;
+
+        }
+    </style>
+
 
 </head>
 
@@ -15,7 +142,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Preferencias.html">Preferencias</a></li>
+                <li class="active"><a href="Preferencias.html">Preferencias</a></li>
                 <li><a href="Audiovisuales.html">Audiovisuales</a></li>
                 <li><a href="Contacto.html">Contacto</a></li>
             </ul>
@@ -23,9 +150,59 @@
 
         </nav>
 
-        
+
     </header>
-    
+    <h2 style="margin: 15px;">Preferencias de Lola</h2>
+    <hr>
+
+    <div class="container">
+        <table align="center">
+            <colgroup>
+                <col style="background-color: rgb(207, 207, 207);">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th></th>
+            <th>Prefiere: </th>
+            <th>No le gusta: </th>
+
+            <tr>
+                <td>Alimento</td>
+                <td>Pedigre</td>
+                <td>Sabrosito</td>
+            </tr>
+            <tr>
+                <td>Piedritas</td>
+                <td>Altagama</td>
+                <td>Genéricas</td>
+            </tr>
+            <tr>
+                <td>Juguetes</td>
+                <td>Peluches</td>
+                <td>Campanita</td>
+            </tr>
+            <tr>
+                <td>Actividades</td>
+                <td>Jugar</td>
+                <td>Dejar barrer</td>
+            </tr>
+            <tr>
+                <td>Música</td>
+                <td>Folclore</td>
+                <td>Reggaeton</td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <footer class="footer">
+        <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+
 
 </body>
 
